@@ -94,8 +94,8 @@ hi Search gui=Bold guifg=Black guibg=Yellow cterm=Bold ctermfg=Black ctermbg=Yel
 
 " hightlight current line
 hi clear CursorLine
-hi CursorLine   cterm=NONE ctermbg=234 guibg=0   guifg=None
-hi CursorColumn cterm=NONE ctermbg=234 guibg=0   guifg=None
+hi CursorLine   cterm=NONE ctermbg=234
+hi CursorColumn cterm=NONE ctermbg=234
 
 
 " ----- vim-textmanip: https://github.com/t9md/vim-textmanip -----
