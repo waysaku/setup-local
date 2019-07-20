@@ -1,7 +1,7 @@
 echo "start setup for ubuntu"
 
 apt update
-apt install -y git vim curl tmux
+apt install -y git vim curl tmux language-pack-ja-base language-pack-ja
 
 mkdir ~/.vim
 cp dotfiles/.gitconfig    ~/
