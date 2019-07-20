@@ -22,7 +22,7 @@ cp ./git-bashfiles/git-completion.bash ~/
 cp ./git-bashfiles/git-prompt.sh       ~/
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-#source ~/.bashrc
 source ~/.nvm/nvm.sh && nvm install v10.15.0
 source ~/.nvm/nvm.sh && nvm use     v10.15.0
 
+git clone https://github.com/syndbg/goenv.git ~/.goenv

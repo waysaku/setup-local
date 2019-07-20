@@ -69,4 +69,6 @@ function parse_git_branch {
 export PS1="\t# \[\e[1;34m\]\u\[\e[m\]@\w\[\e[1;31m\] \$(parse_git_branch)\[\e[m\]"
 
 # go language environment setting
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
 eval "$(goenv init -)"
