@@ -25,7 +25,7 @@ cp ./git-bashfiles/git-completion.bash ~/
 cp ./git-bashfiles/git-prompt.sh       ~/
 
 echo "##### Install nvm and node"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh > /dev/null 2>&1 | bash
+curl -sS -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash > /dev/null 2>&1
 source ~/.nvm/nvm.sh && nvm install v10.15.0 > /dev/null 2>&1
 source ~/.nvm/nvm.sh && nvm use     v10.15.0 > /dev/null 2>&1
 
