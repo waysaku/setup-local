@@ -66,7 +66,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
-export PS1="\t# \[\e[1;34m\]\u\[\e[m\]@\w\[\e[1;31m\] \$(parse_git_branch)\[\e[m\]"
+export PS1="\t# \[\e[1;34m\]\u\[\e[m\]@\w\[\e[1;31m\] \$(parse_git_branch)$ \[\e[m\]"
 
 # go language environment setting
 export GOENV_ROOT=$HOME/.goenv
