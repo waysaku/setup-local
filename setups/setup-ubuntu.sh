@@ -26,3 +26,9 @@ source ~/.nvm/nvm.sh && nvm install v10.15.0
 source ~/.nvm/nvm.sh && nvm use     v10.15.0
 
 git clone https://github.com/syndbg/goenv.git ~/.goenv
+export GOENV_ROOT=$HOME/.goenv
+export PATH=$GOENV_ROOT/bin:$PATH
+eval "$(goenv init -)"
+goenv install -s 1.12.7
+goenv global  1.12.7
+goenv rehash
