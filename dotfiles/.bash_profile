@@ -1,6 +1,6 @@
 ### Aliases
 
-alias hb='hub browse'
+alias hb='gh repo view -w'
 
 # Color LS
 colorflag="-G"
