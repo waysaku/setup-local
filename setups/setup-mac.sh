@@ -9,3 +9,8 @@ cp -f /usr/local/opt/ricty/share/fonts/Ricty*.ttf ~/Library/Fonts/ && fc-cache -
 
 source setups/setup-common.sh
 echo "export LC_ALL=en_US.UTF-8" >> ~/.bashrc
+
+echo "##### Change to bash from zsh"
+chsh -s /bin/bash
+sudo chsh -s /bin/bash
+echo "export BASH_SILENCE_DEPRECATION_WARNING=1" >> ~/.bashrc
