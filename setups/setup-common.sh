@@ -8,8 +8,7 @@ cp dotfiles/.bash_profile ~/
 cp dotfiles/.editorconfig ~/
 
 echo "##### Install vim package manager (dein)"
-curl -sS https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.cache/dein > /dev/null 2>&1
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
 
 echo "##### Setup vim environment"
 git clone https://github.com/waysaku/vim /tmp/vim > /dev/null 2>&1
