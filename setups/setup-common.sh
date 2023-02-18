@@ -1,11 +1,13 @@
 echo "##### Install copy dotfiles"
 mkdir ~/.vim
 cp dotfiles/.gitconfig    ~/
-cp dotfiles/.tmux.conf    ~/
 cp dotfiles/.vimrc        ~/
 cp dotfiles/.bashrc       ~/
 cp dotfiles/.bash_profile ~/
 cp dotfiles/.editorconfig ~/
+if [[ -z CLOUD_SHELL ]]; then
+  cp dotfiles/.tmux.conf    ~/
+fi
 
 echo "##### Install vim package manager (dein)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
